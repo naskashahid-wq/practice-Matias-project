@@ -1,0 +1,431 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.testimonial-page {
+  width: 100%;
+  background: #10110d;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.testimonial-section {
+  width: 100%;
+  min-height: 475px;
+  padding: 35px 20px 30px;
+  background: #10110d;
+}
+
+.testimonial-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.testimonial-heading span {
+  color: #c5ff00;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.testimonial-heading h2 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+
+.testimonial-card {
+  width: 100%;
+  max-width: 760px;
+  min-height: 210px;
+  margin: auto;
+  background: #171717;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  gap: 15px;
+}
+
+.customer-left {
+  width: 100px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.customer-small {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 3px solid #aaa;
+  object-fit: cover;
+  align-self: center;
+}
+
+.customer-large {
+  width: 80px;
+  height: 95px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.review-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.review-square {
+  width: 22px;
+  height: 22px;
+  background: #101010;
+  border-radius: 5px;
+}
+
+.stars {
+  color: #ffb900;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.review-content h3 {
+  color: #c5ff00;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.review-content small {
+  color: #888;
+  font-size: 15px;
+}
+
+.customer-right {
+  width: 120px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.customer-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 45% 45% 5px 5px;
+  padding-bottom: 50px;
+}
+
+.review-dots {
+  display: flex;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #777;
+}
+
+.active-dot {
+  background: #c5ff00;
+}
+
+.card-decoration {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  color: #c5ff00;
+  font-size: 30px;
+  transform: rotate(-25deg);
+}
+
+.trusted-clients {
+  max-width: 760px;
+  margin: 35px auto 0;
+  text-align: center;
+}
+
+.trusted-clients h3 {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.client-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  color: #999;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo-box {
+  background: #777;
+  color: #111;
+  padding: 1px 3px;
+  border-radius: 2px;
+}
+
+.recent-posts {
+  width: 100%;
+  min-height: 360px;
+  padding: 45px 20px;
+}
+
+.posts-container {
+  width: 100%;
+  max-width: 760px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+.posts-left {
+  width: 190px;
+  flex-shrink: 0;
+}
+
+.posts-label {
+  color: #c5ff00;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.posts-left h2 {
+  font-size: 35px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.blog-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #c5ff00;
+  color: black;
+  border: none;
+  margin-top: 35px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 #799b00;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.blog-button small {
+  font-size: 12px;
+}
+
+.posts-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-row {
+  width: 100%;
+  min-height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #30302d;
+  padding: 12px 0;
+}
+
+.post-row:first-child {
+  border-top: 1px solid #30302d;
+}
+
+.post-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-date {
+  display: inline-block;
+  color: #aaa;
+  font-size: 20px;
+  border: 1px solid #444;
+  padding: 4px 8px;
+  border-radius: 15px;
+  margin-bottom: 9px;
+}
+
+.post-info h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.active-post h3 {
+  color: #c5ff00;
+}
+
+.post-image {
+  width: 120px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.post-arrow {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #777;
+  border-radius: 50%;
+  background: transparent;
+  color: #aaa;
+  font-size: 25px;
+  flex-shrink: 0;
+}
+
+.active-arrow {
+  color: #c5ff00;
+  border-color: #c5ff00;
+}
+
+@media (max-width: 600px) {
+
+  .testimonial-section {
+    padding: 30px 15px;
+  }
+
+  .testimonial-heading h2 {
+    font-size: 21px;
+  }
+
+  .testimonial-card {
+    padding: 12px;
+    gap: 8px;
+    min-height: 190px;
+  }
+
+  .customer-left {
+    width: 65px;
+    height: 145px;
+  }
+
+  .customer-small {
+    width: 38px;
+    height: 38px;
+  }
+
+  .customer-large {
+    width: 60px;
+    height: 75px;
+  }
+
+  .customer-right {
+    width: 65px;
+    height: 100px;
+  }
+
+  .review-text {
+    font-size: 9px;
+  }
+
+  .review-content h3 {
+    font-size: 11px;
+  }
+
+  .review-content small {
+    font-size: 8px;
+  }
+
+  .stars {
+    font-size: 10px;
+  }
+
+  .client-logos {
+    font-size: 10px;
+    gap: 8px;
+  }
+
+  .trusted-clients h3 {
+    font-size: 10px;
+  }
+
+  .posts-container {
+    gap: 15px;
+  }
+
+  .posts-left {
+    width: 110px;
+  }
+
+  .posts-left h2 {
+    font-size: 21px;
+  }
+
+  .blog-button {
+    width: 75px;
+    height: 75px;
+  }
+
+  .post-info h3 {
+    font-size: 10px;
+  }
+
+  .post-image {
+    width: 75px;
+    height: 50px;
+  }
+
+  .post-arrow {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+  }
+
+}
+
+@media (max-width: 380px) {
+
+  .customer-right {
+    width: 48px;
+    height: 80px;
+  }
+
+  .customer-left {
+    width: 55px;
+  }
+
+  .posts-left {
+    width: 90px;
+  }
+
+  .posts-container {
+    gap: 10px;
+  }
+
+  .post-image {
+    width: 60px;
+  }
+
+}
